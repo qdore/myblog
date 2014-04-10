@@ -11,11 +11,11 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = myblog
 TEMPLATE = app
 
-INCLUDEPATH += /usr/local/Cellar/boost/1.55.0/include
+INCLUDEPATH += /usr/boost/include
 
-LIBS += /usr/local/Cellar/boost/1.55.0/lib/libboost_system.a\
-        /usr/local/Cellar/boost/1.55.0/lib/libboost_filesystem.a\
-        /usr/local/Cellar/boost/1.55.0/lib/libboost_date_time.a\
+LIBS += /usr/boost/lib/libboost_system.a\
+        /usr/boost/lib/libboost_filesystem.a\
+        /usr/boost/lib/libboost_date_time.a\
 
 SOURCES += main.cpp\
         mainwindow.cpp
